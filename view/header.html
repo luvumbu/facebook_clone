@@ -11,13 +11,11 @@
        
     </div>
     <div class="right">
-   <div>
+   <div style="position: relative;">
     <input type="text" class="w100" placeholder="Adresse e-mail ou numéro de tél." aria-label="Username" aria-describedby="basic-addon1">
-    <input type="text" class="w100" placeholder="Mot de passe" aria-label="Username" aria-describedby="basic-addon1">
-    
-  <a href="">
-    <i class="fa fa-eye-slash" style="font-size: 1.3em;margin-top:20px;color: black;"></i>
-  </a>
+    <input  id="input_password" type="password" class="w100" placeholder="Mot de passe" aria-label="Username" aria-describedby="basic-addon1">
+    <i  id="eye" onclick="eye_change(this)" class="fa fa-eye-slash eye-position" style="font-size: 1.3em;margin-top:20px;color: black;"></i>
+     
 
   <div class="connexion">
      <b>  Connexion  </b>
@@ -25,7 +23,7 @@
    <div class="oublie">
        <a href="">   Mot de passe oublié ?</a> 
    </div>
-   <div class="creer_compte"> 
+   <div class="creer_compte" onclick="action_btn(this)" title="block"> 
     Créer un compte
    </div>
    

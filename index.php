@@ -46,5 +46,34 @@ echo '<link rel="stylesheet" href="model/css/remove_body.css">';
          font-size:15px;
      }
  </style>
+
+ <script>
+ var footer = document.getElementsByTagName("footer");
+     function  action_btn(this_){
+        
+         if(this_.title=='block'){
+                document.getElementById('ist-display').className='display-block';
+                
+                footer[0].style.display="none";
+         }
+         else {
+            document.getElementById('ist-display').className='display-none';
+            footer[0].style.display="block";
+         }
+        
+     }
+     function eye_change(this_){
+         if(this_.className=="fa fa-eye-slash eye-position"){
+            document.getElementById("eye").className="fa fa-eye eye-position";
+            
+            document.getElementById("input_password").type="text";
+         }
+         else{
+            document.getElementById("eye").className="fa fa-eye-slash eye-position";
+            document.getElementById("input_password").type="password";
+         }
+         
+     }
+ </script>
 </body>
 </html>

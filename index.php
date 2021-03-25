@@ -74,6 +74,47 @@ echo '<link rel="stylesheet" href="model/css/remove_body.css">';
          }
          
      }
+
+
+
+
+
+     function inscription(_this){
+
+
+
+          var prenom =        document.getElementById("prenom").value; 
+          var nom =       document.getElementById("nom").value; 
+          var mobile_mail =       document.getElementById("mobile_mail").value; 
+          var password =      document.getElementById("password").value;                     
+          var naissance =       document.getElementById("naissance").value; 
+ 
+
+                    var ok = new Information("addlogin.php"); // création de la classe 
+
+ok.add("prenom", prenom); // ajout de l'information pour lenvoi 
+
+ok.add("nom", nom); // ajout de l'information pour lenvoi 
+
+ok.add("mobile_mail", mobile_mail); // ajout de l'information pour lenvoi 
+
+ok.add("password", password); // ajout de l'information pour lenvoi 
+
+ok.add("naissance", naissance); // ajout de l'information pour lenvoi 
+  
+
+
+console.log(ok.info()); // demande l'information dans le tableau
+ok.push(); // envoie l'information au code pkp 
+               
+
+               
+
+
+
+
+
+     }
  </script>
 </body>
 </html>

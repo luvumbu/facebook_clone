@@ -36,7 +36,7 @@ $sql = "INSERT INTO mouse_move (adresse_ip,x_position,y_position )
 VALUES ('$REMOTE_ADDR','$x_position','$y_position')";
 
 if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
+  echo "Ajout de la position ok ";
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
